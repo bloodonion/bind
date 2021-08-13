@@ -1,1 +1,12 @@
 ---
+
+
+- name: Role_bind - Installing packages
+  package:
+    pkg: 
+    - python3-netaddr
+    - python3-dns
+    - bind
+    - bind-utils
+    state: present
+  become: yes
