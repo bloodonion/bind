@@ -1,0 +1,13 @@
+# /etc/named/fwd.test.local.db
+
+$TTL	86400
+@	IN	SOA	tb-bind.test.local. root.test.local. (
+1       ; Serial
+604800  ; Refresh
+86400   ; Retry
+2419200 ; Expire
+86400   ; Negative Cache TTL
+);
+@	IN	NS	tb-bind.test.local.
+tb-bind.test.local.	IN	A	10.1.1.210
+tb-01.test.local.	IN	A	10.1.1.200

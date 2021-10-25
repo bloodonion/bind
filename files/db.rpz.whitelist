@@ -1,0 +1,20 @@
+# /etc/named/db.rpz.whitelist
+
+$TTL	60
+@	IN	SOA	tb-bind.test.local. root.test.local.  (
+4   ; serial
+3H  ; refresh
+1H  ; retry
+1W  ; expiry
+1H) ; minimum
+
+@	IN	NS	localhost.
+
+netflix.com                 CNAME   rpz-passthru.
+*.netflix.com               CNAME   rpz-passthru.
+
+nflximg.com                 CNAME   rpz-passthru.
+*.nflximg.com               CNAME   rpz-passthru.
+
+nflximg.net                 CNAME   rpz-passthru.
+*.nflximg.net               CNAME   rpz-passthru.
